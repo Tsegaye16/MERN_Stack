@@ -19,7 +19,8 @@ function Persons(){
             dept:"IS"
         }
     ]
-    let personList = persons.map(person=><h4 key={person.id}>{` Huy guys? My name is ${person.name}, I'm ${person.age} years old and My Dept is ${person.dept}`}</h4>)
+    let names = ["Tsegaye","Yeshineh", "Kefle"]
+    let personList = names.map((name, index)=><h4 key={index} >{index}, {name}</h4>)
     return (
         <h1>{personList}</h1>
         

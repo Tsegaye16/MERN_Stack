@@ -1,0 +1,79 @@
+.register {
+  height: 100vh;
+  background: linear-gradient(to top left, aquamarine, yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .card {
+    min-height: 600px;
+    display: flex;
+    width: 50%;
+    background-color: white;
+    border-radius: 13px;
+    overflow: hidden;
+    .left {
+      background: linear-gradient(rgba(39, 11, 96, 0.4), rgba(39, 11, 96, 0.4)),
+        url("https://www.ncsc.gov.uk/images/social-icons.jpg") center;
+      background-size: cover;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: white;
+      flex: 1;
+      h1 {
+        font-size: 100px;
+        line-height: 100px;
+      }
+      p {
+      }
+      span {
+        font-size: 18px;
+      }
+      button {
+        width: 50%;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        background-color: white;
+        color: darkgoldenrod;
+        color: aquamarine;
+        font-weight: bolder;
+        cursor: pointer;
+      }
+    }
+    .right {
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      color: white;
+      flex: 1;
+      justify-content: center;
+      h1 {
+        color: #555;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        input {
+          border: none;
+          border-bottom: solid black 1px;
+          padding: 20px 10px;
+        }
+        button {
+          width: 50%;
+          padding: 10px;
+          border: none;
+          border-radius: 20px;
+          background-color: aquamarine;
+
+          color: white;
+          font-weight: bolder;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

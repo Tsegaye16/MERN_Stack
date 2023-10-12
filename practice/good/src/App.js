@@ -1,15 +1,14 @@
-//import Persons from "./component/list"
-import React from "react"
-//import Form from "./component/form"
+
+import './App.css';
 import { useState } from "react"
 
 function App(){
     const [counter, setCounter] = useState(0)
     return (
         <div>
-            <button>-</button>
+           <button onClick={()=>setCounter(prev=>prev-1)} >-</button>
             <h1>{counter}</h1>
-            <button>+</button>
+            <button onClick={()=>setCounter(prev=>prev+1)} >+</button>
 
             {/* <Persons/>
             <Form/> */}
